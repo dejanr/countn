@@ -1,22 +1,27 @@
 {
   "name": "countn",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "author": {
+    "name": "Dejan Ranisavljevic",
+    "email": "dejan.ranisavljevic@gmail.com",
+    "url": "http://dejan.ranisavljevic.com"
+  },
   "description": "Simple control flow, for counting callbacks",
   "main": "index.js",
   "scripts": {
     "test": "tap test.js"
   },
+  "dependencies": {},
+  "devDependencies": {
+    "tap": "^0.4.12"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/dejanr/countn.git"
   },
-  "author": "Dejan Ranisavljevic <dejan.ranisavljevic@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dejanr/countn/issues"
   },
-  "homepage": "https://github.com/dejanr/countn",
-  "devDependencies": {
-    "tap": "^0.4.12"
-  }
+  "homepage": "https://github.com/dejanr/countn"
 }
