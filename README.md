@@ -33,11 +33,10 @@ counting callbacks, i just wanted a simple library for a little suggar on top of
 
 ## Running tests
 
-``
+```
 $ npm install
-
 $ npm test
-``
+```
 
 ## Authors
 
