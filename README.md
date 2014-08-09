@@ -10,8 +10,8 @@ countn is a simple control flow for counting callbacks.
 
 ## Usage Example
 
-Here is a example of simple async scheduling. Where we have subscribed to console log 'we are done'
-when all async scheduled event have finished executing
+Here is a example of simple async scheduling. Where we have subscribed to execute some code after all concurent tasks
+have finished.
 
 ```js
 var countn = require('countn')
