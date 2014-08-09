@@ -35,6 +35,7 @@ counting callbacks, i just wanted a simple library for a little suggar on top of
 
 ``
 $ npm install
+
 $ npm test
 ``
 
