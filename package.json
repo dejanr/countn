@@ -1,6 +1,6 @@
 {
   "name": "countn",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": {
     "name": "Dejan Ranisavljevic",
     "email": "dejan.ranisavljevic@gmail.com",
@@ -8,6 +8,13 @@
   },
   "description": "Simple control flow, for counting callbacks",
   "main": "index.js",
+  "keywords": [
+    "async",
+    "callback",
+    "counting",
+    "control",
+    "flow"
+  ],
   "scripts": {
     "test": "tap test.js"
   },
