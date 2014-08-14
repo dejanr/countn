@@ -2,7 +2,7 @@
 
 countn is a simple control flow for counting callbacks.
 
-[![Build Status](https://travis-ci.org/dejanr/countn.png)](https://travis-ci.org/dejanr/countn)
+[![Build Status](https://semaphoreapp.com/api/v1/projects/76f73a00-8f7f-462a-8b6d-8d8cddc195e4/230234/shields_badge.png)](https://semaphoreapp.com/dejanr/countn)
 
 ## Installation
 
