@@ -18,7 +18,9 @@
   "scripts": {
     "test": "faucet test.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "faucet": "0.0.1"
+  },
   "devDependencies": {
     "tap": "^0.4.12"
   },
