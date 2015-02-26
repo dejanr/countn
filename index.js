@@ -1,8 +1,8 @@
-var noop = function() {}
+'use strict'
 
 function CountableSet(num, done) {
   this.num = num || 1
-  this.done = done || noop
+  this.done = done || function() {}
   this.finished = false
   this.args = []
 
