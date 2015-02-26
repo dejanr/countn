@@ -1,6 +1,6 @@
 {
   "name": "countn",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "author": {
     "name": "Dejan Ranisavljevic",
     "email": "dejan.ranisavljevic@gmail.com",
@@ -16,10 +16,11 @@
     "flow"
   ],
   "scripts": {
-    "test": "tap test.js"
+    "test": "faucet test.js"
   },
   "dependencies": {},
   "devDependencies": {
+    "faucet": "0.0.1",
     "tap": "^0.4.12"
   },
   "repository": {

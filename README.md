@@ -13,40 +13,45 @@ countn is a simple control flow for counting callbacks.
 Here is a example of simple async scheduling. Where we have subscribed to execute some code after all concurent tasks
 have finished.
 
-```js
-var countn = require('countn')
+```javascript
 var cb = countn(5, function(err, results) {
-  console.log('results:', results) // results: { all: [ [], [], [], [], [] ] }
+  console.log('results: ', results)
 })
 
-setTimeout(cb(), 300)
-setTimeout(cb(), 100)
-setTimeout(cb(), 500)
-setTimeout(cb(), 200)
-setTimeout(cb(), 400)
+cb(null, 'this is example call')
+setTimeout(function() {
+  cb(null, 'this is last call')
+}, 500)
+setTimeout(cb, 100)
+setTimeout(cb, 200)
+setTimeout(cb, 400)
 ```
 
-## Named Callbacks Example
+## Example with error call
 
-Here is a example of simple async scheduling with named callbacks, so we could easily reuse results.
+Here is a example when error occured
 
-```js
-var countn = require('countn')
-var cb = countn(5, function(err, results) {
-  console.log('first result: ', results.first) // undefined
+```javascript
+var cb2 = countn(3, function(err) {
+  console.log('example exited with error: ' + err)
 })
 
-setTimeout(cb('first'), 300)
-setTimeout(cb('second'), 100)
-setTimeout(cb('third'), 500)
-setTimeout(cb('fourth'), 200)
-setTimeout(cb('fifth'), 400)
+cb2(null, 'this is first ok call')
+setTimeout(function() {
+  cb2('this is first error call')
+}, 100)
+setTimeout(function() {
+  cb2(null, 'this is second ok call')
+}, 200)
 ```
 
 ## What's it good for?
 
 countn is not ment to replace any control flow library, rather as i am still
 counting callbacks, i just wanted a simple library for a little suggar on top of it.
+
+And i believe its much readable having everything in same hierarchy instead of complex
+nesting structures.
 
 ## Running tests
 
