@@ -16,7 +16,7 @@
     "flow"
   ],
   "scripts": {
-    "test": "tap test.js"
+    "test": "faucet test.js"
   },
   "dependencies": {},
   "devDependencies": {
