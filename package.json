@@ -20,6 +20,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "faucet": "0.0.1",
     "tap": "^0.4.12"
   },
   "repository": {

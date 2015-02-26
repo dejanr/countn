@@ -15,7 +15,7 @@ have finished.
 
 ```javascript
 var cb = countn(5, function(err, results) {
-  console.log(err, results)
+  console.log('results: ', results)
 })
 
 cb(null, 'this is example call')
@@ -33,7 +33,7 @@ Here is a example when error occured
 
 ```javascript
 var cb2 = countn(3, function(err) {
-  example(null, 'example 2 done with error: ' + err)
+  console.log('example exited with error: ' + err)
 })
 
 cb2(null, 'this is first ok call')
